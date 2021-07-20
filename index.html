@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <link rel="shortcut icon" href="./img/favicon-32x32.png" type="image/x-icon">
+    <title>IP Address Tracker</title>
+</head>
+
+<body>
+    <main class="main">
+        <!-- Top box with blue pattern background -->
+        <div class="top-box">
+            <!-- Title -->
+            <h1>IP Address Tracker</h1>
+            <!-- Input destails and button -->
+            <form action="" id="form">
+                <!-- Input box -->
+                <input type="text" placeholder="Search IP address or domain" id="ip-input">
+                <!-- Button -->
+                <input type="button" value="" id="btn">
+            </form>
+        </div>
+        <!-- Button white box -->
+        <div class="details">
+            <!-- Card -->
+            <div class="card">
+                <p class="title">IP ADDRESS</p>
+                <h2 id="current_IP">192.212.174.101</h2>
+            </div>
+
+            <!-- Card -->
+            <div class="card">
+                <p class="title">LOCATION</p>
+                <h2 id="current_Location">Brooklyn, NY 1001</h2>
+            </div>
+
+            <!-- Card -->
+            <div class="card">
+                <p class="title">TIMEZONE</p>
+                <h2 id="current_Timezone">UTC-05:00</h2>
+            </div>
+
+            <!-- Card -->
+            <div class="card">
+                <p class="title">ISP</p>
+                <h2 id="current_ISP">SpaceX Starlink</h2>
+            </div>
+        </div>
+
+    </main>
+    <div id="mapid"></div>
+
+    <img src="./img/icon-location.svg" alt="">
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
